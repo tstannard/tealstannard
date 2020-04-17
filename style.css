@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
+/* 
+$white: #fff;
+$black: #2e2e2e;
+$gray: #008080;
+$highlight: #ea8478;
+$footer: #f7f7f7; */
+
+body {
+  font-family: 'Railway', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: $gray;
+  background: $white;
+  text-rendering: optimizeLegibility;
+}
+
+.content_block {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.name {
+  margin: auto;
+  font-size: 60px;
+  color: #006969;
+  padding-top: 4%;
+}
+
+.foot {
+  margin: auto;
+  font-size: 20px;
+  color: #006969;
+  padding: 4%;
+}
+
+.row {
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.rectangle {
+width: 90%;
+}
+
+.box {
+  width: 33%;
+}
+
+.text {
+  width: 14%;
+  color: #006969;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30;
+}
+
+.text_insta {
+  width: 14%;
+  color: #006969;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 20;
+}
+
+.long_text {
+  width: 53%;
+  color: #006969;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 25;
+}
+
+.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: 006969;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-instagram {
+  color: 006969;
+}
