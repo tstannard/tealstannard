@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
-/* 
-$white: #fff;
-$black: #2e2e2e;
-$gray: #008080;
-$highlight: #ea8478;
-$footer: #f7f7f7; */
 
 body {
   font-family: 'Railway', sans-serif;
@@ -46,24 +40,15 @@ body {
 }
 
 .rectangle {
-width: 90%;
+width: 91%;
 }
 
 .box {
-  width: 33%;
-}
-
-.text {
-  width: 14%;
-  color: #006969;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 30;
+  width: 27%;
 }
 
 .text_insta {
-  width: 14%;
+  width: 27%;
   color: #006969;
   text-align: center;
   margin-top: auto;
@@ -72,7 +57,7 @@ width: 90%;
 }
 
 .long_text {
-  width: 53%;
+  width: 70%;
   color: #006969;
   text-align: center;
   margin-top: auto;
@@ -90,7 +75,6 @@ width: 90%;
 .fa:hover {
     opacity: 0.7;
 }
-
 
 .fa-instagram {
   color: 006969;
