@@ -27,7 +27,7 @@ body {
   margin: auto;
   font-size: 20px;
   color: #006969;
-  padding: 4%;
+  margin-top: 5%;
 }
 
 .row {
@@ -57,12 +57,12 @@ width: 91%;
 }
 
 .long_text {
-  width: 70%;
+  width: 80%;
   color: #006969;
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 25;
+  font-size: 20;
 }
 
 .fa {
