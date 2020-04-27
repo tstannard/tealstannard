@@ -1,0 +1,66 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <div class="content_block">
+  
+  <div class="name"> teal stannard </div>
+
+  <div class="row">
+    <p id="list_input" style="width: 100%" >
+      <input type="text" id="list" name="list" style="width: 100%"><br>
+    </p>
+  </div>
+
+  <div class="row">
+  <button id="submit_button" style="display:block;" onclick="sort()">sort</button>
+  </div>
+
+  <p id='show_list'></p>
+  
+  <div id="sorted">
+  </div>
+
+</html>
+
+  <script>
+
+    function sort(){
+      var list =  document.getElementById("list").value.split(' ,').join(',').split(",");
+      var sorted = mergeSort(list);
+      document.getElementById('sorted').innerHTML = sorted;
+    }
+
+  function mergeSort(arr) {
+    if (arr.length < 2) {
+      return arr;
+    }
+
+    const middle = Math.floor(arr.length / 2);
+    const left = arr.slice(0, middle);
+    const right = arr.slice(middle);
+
+    return merge(mergeSort(left), mergeSort(right));
+  }
+
+  function merge(left, right) {
+    let arr = [];
+
+    while (left.length && right.length) {
+
+      var user = prompt("Which is better? " + left[0].toString() + " or " + right[0].toString(), "");
+      
+      if (user == right[0].toString()) {
+        arr.push(left.shift());
+      } else if (user == left[0].toString()) {
+        arr.push(right.shift());
+      } else {
+        arr.push(right.shift());
+      }
+
+    }
+    return arr.concat(left.slice().concat(right.slice()));
+  }
+</script>
